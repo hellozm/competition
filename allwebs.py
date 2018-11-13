@@ -25,11 +25,11 @@ class Spider:
                 'Connection': 'keep-alive',
                 'Accept-Encoding': 'gzip,deflate',
                 'Accept': '*/*',
-                'User-Agent': 'python-requests/2.19.1',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
             }
         self.flag = True
         try:
-            self.r = requests.get(self.url, headers=self.headers, timeout=1)
+            self.r = requests.get(self.url, headers=self.headers, timeout=5)
         except requests.exceptions.ConnectTimeout:
             self.flag = False
             print("connection_timeout------"+self.url)
@@ -51,12 +51,12 @@ class Spider:
             for label in soup.find_all("a"):
                 if label.get('href') and re.match('http.*', label.get('href')):
                     normal_url = spider.normalization(label.get('href'))
-                    if normal_url.split('.')[-2] not in queue.visited:
+                    if len(normal_url.split('.')) == 3 and normal_url.split('.')[-2] not in queue.visited:
                         # print(normal_url)
                         queue.visited.append(normal_url.split('.')[-2])
                         suburl.add(normal_url)
             for s in suburl:
-                if len(queue.unvisited) < 30:
+                if len(queue.unvisited) < 300:
                     queue.unvisited.append(s)
                     with open('urls.txt', 'a+', encoding='utf-8') as f:
                         # print(s)
@@ -86,7 +86,7 @@ if __name__ == "__main__":
                 spider.get_url()
 
     '''
-    start_url = "http://www.zgjssw.gov.cn/"
+    start_url = "http://www.jiangsu.gov.cn/"
     queue = LinkQueue()
     queue.unvisited.append(start_url)
     for url in queue.unvisited:
