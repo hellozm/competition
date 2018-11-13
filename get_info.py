@@ -29,7 +29,7 @@ class Spider:
                 return r.text
             else:
                 return ''
-        except requests.exceptions.ConnectionError:
+        except :
             self.flag = False
             return ''
 
@@ -62,6 +62,9 @@ class Spider:
                 else:  # 没有主体信息（备案号、主办单位性质），则向查询备案号的网站查询
                     info = analyze_web.get_response(self.url)
                     if '未备案' in info:
+                        self.feature.append('0')
+                        self.feature.append('0')
+                    elif '失败' in info:
                         self.feature.append('0')
                         self.feature.append('0')
                     elif '屏蔽' in info:
