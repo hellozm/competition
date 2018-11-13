@@ -33,7 +33,7 @@ def display():
         feature_list = s.feature
         data, target = load_dataset('feature_2.txt')
         reliability = train_1(data, target, feature_list)
-    return render_template('display.html', form=form, url=url, reliability=str(reliability))
+    return render_template('display.html', form=form, url=url, reliability=reliability)
 
 
 if __name__ == '__main__':

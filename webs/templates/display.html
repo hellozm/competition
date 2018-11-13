@@ -3,8 +3,21 @@
 {% block title %}{{ url }}{% endblock %}
 {% block page_content %}
 <div class="page-header">
-    <h1><a href={{ url }}>{% if url %}{{ url }}{% else %}例如：https://www.baidu.com{% endif %}</a></h1>
-    <h2>该网站可信度为：{{ reliability }}</h2>
+    <h4><a href={{ url }}>{% if url %}{{ url }}{% else %}例如：https://www.baidu.com{% endif %}</a></h4>
+    {{ wtf.quick_form(form) }}
+    <h3>该网站可信度为：{{ reliability }}({% if reliability %}
+                                            {% if reliability<=0.2 %}
+                                                ★☆☆☆☆)，不建议访问！
+                                            {% elif reliability<=0.4 %}
+                                                ★★☆☆☆，请谨慎访问)！
+                                            {% elif reliability<=0.6 %}
+                                                ★★★☆☆)，请谨慎访问！
+                                            {% elif reliability<=0.8 %}
+                                                ★★★★☆)，请放心访问！
+                                            {% else %}
+                                                ★★★★★)，请放心访问！
+                                            {% endif %}
+                                        {% endif %}
+                                        </h3>
 </div>
-{{ wtf.quick_form(form) }}
 {% endblock %}
