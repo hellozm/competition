@@ -13,7 +13,7 @@ def get_response(url):
         'Connection': 'keep-alive',
         'Accept-Encoding': 'gzip,deflate',
         'Accept': '*/*',
-        'User-Agent': 'python-requests/2.19.1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
     }
     r = requests.get(full_url, headers=headers)
     soup = BeautifulSoup(r.text, 'html.parser')
@@ -35,12 +35,17 @@ def get_response(url):
             info = content.text
         elif '屏蔽' in content.text:
             info = content.text
+        else:
+            info = '查询失败'
         # with open('identification.txt', 'a+', encoding='utf-8') as f:
             # f.write(url+' '+info+'\n')
+        return info
+    else:
+        info = '404失败'
         return info
 
 
 if __name__ == '__main__':
-    get_response("http://www.6090qpg.com/")
+    get_response("http://www.wx359.cn/")
     get_response("http://www.baidu.com/")
     get_response("http://www.taobao.com/")
