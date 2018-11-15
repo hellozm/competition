@@ -27,7 +27,7 @@ def display():
     error = ''
     if form.validate_on_submit():
         url = form.url.data
-        s = Spider(url.split('//')[1])
+        s = Spider(url.split('//')[1].split(':')[0].split('/')[0])
         s.get_main_info()
         s.get_ip_location()
         s.get_qualification_info()
