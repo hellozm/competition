@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_response(url):
+def get_base_info(url):
     """
     将网站是否有备案、屏蔽以及主办单位性质，若有，则写入identification.txt并打印出来
     :param url: 想要查询的网站地址
@@ -17,16 +17,17 @@ def get_response(url):
     }
     r = requests.get(full_url, headers=headers)
     soup = BeautifulSoup(r.text, 'html.parser')
-    if soup.find_all('li', 'clearfix'):  # 如果备案号以及主办单位性质存在，将两属性放在info列表并返回
+    if soup.find_all('li', 'clearfix'):  # 如果网站基本信息存在
         info = []
-        li_1 = soup.find_all('li', 'clearfix')[1]
-        info.append(li_1.find('p').text)
-        li_2 = soup.find_all('li', 'bg-gray clearfix')[1]
-        info.append(li_2.find('p').text)
-        info[1] = info[1][:-4]
+        sponsor_name = soup.find_all('li', 'clearfix')[0].find('p').text
+        sponsor_feature = soup.find_all('li', 'clearfix')[1].find('p').text
+        sponsor_license = soup.find_all('li', 'clearfix')[2].find('p').text
+        web_name = soup.find_all('li', 'clearfix')[3].find('p').text
+        info.append(sponsor_name[:-10])
+        info.append(sponsor_feature)
+        info.append(sponsor_license[:-4])
+        info.append(web_name)
         print(info)
-        # with open('identification.txt', 'a+', encoding='utf-8') as f:
-        # f.write(url+' '+' '.join(info)+'\n')
         return info
     elif soup.find_all('p', 'tc col-red fz18 YaHei pb20'):  # 如果未备案或者屏蔽
         content = soup.find_all('p', 'tc col-red fz18 YaHei pb20')[0]
@@ -36,16 +37,14 @@ def get_response(url):
         elif '屏蔽' in content.text:
             info = content.text
         else:
-            info = '查询失败'
-        # with open('identification.txt', 'a+', encoding='utf-8') as f:
-            # f.write(url+' '+info+'\n')
+            info = ''
         return info
     else:
-        info = '404失败'
+        info = '404'
         return info
 
 
 if __name__ == '__main__':
-    get_response("http://www.wx359.cn/")
-    get_response("http://www.baidu.com/")
-    get_response("http://www.taobao.com/")
+    get_base_info("http://www.wx359.cn/")
+    get_base_info("http://www.baidu.com/")
+    get_base_info("http://www.taobao.com/")

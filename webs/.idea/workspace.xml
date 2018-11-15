@@ -14,7 +14,7 @@
       <file leaf-file-name="feature.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="281">
               <caret line="1806" column="19" selection-start-line="1806" selection-end-line="1806" selection-end-column="19" />
             </state>
           </provider>
@@ -23,8 +23,8 @@
       <file leaf-file-name="page_display.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page_display.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+            <state relative-caret-position="299">
+              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -35,8 +35,20 @@
       <file leaf-file-name="get_info.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="189" column="41" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="41" />
+            <state relative-caret-position="568">
+              <caret line="103" column="43" lean-forward="true" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_web_base_info.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/show_web_base_info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +56,7 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="-192">
               <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="21" />
             </state>
           </provider>
@@ -53,7 +65,7 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="483">
               <caret line="24" column="118" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="118" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -65,8 +77,8 @@
       <file leaf-file-name="display.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/display.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+            <state relative-caret-position="268">
+              <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -76,8 +88,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -90,14 +102,15 @@
         <option value="$PROJECT_DIR$/feature.csv" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/allwebs.py" />
-        <option value="$PROJECT_DIR$/analyze_web.py" />
         <option value="$PROJECT_DIR$/feature.txt" />
         <option value="$PROJECT_DIR$/urls.txt" />
         <option value="$PROJECT_DIR$/transform_feature.py" />
         <option value="$PROJECT_DIR$/feature_2.txt" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/get_info.py" />
         <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/get_info.py" />
+        <option value="$PROJECT_DIR$/analyze_web.py" />
+        <option value="$PROJECT_DIR$/show_web_base_info.py" />
         <option value="$PROJECT_DIR$/page_display.py" />
         <option value="$PROJECT_DIR$/templates/display.html" />
       </list>
@@ -114,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,15 +134,11 @@
               <item name="webs" type="b2602c69:ProjectViewProjectNode" />
               <item name="webs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.page_display">
     <configuration name="analyze_web" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="webs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,24 +176,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="get_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="webs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_info.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="page_display" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="webs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,6 +189,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/page_display.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="show_web_base_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="webs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/show_web_base_info.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,18 +250,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.analyze_web" />
-      <item itemvalue="Python.get_info" />
       <item itemvalue="Python.train" />
       <item itemvalue="Python.transform_feature" />
       <item itemvalue="Python.page_display" />
+      <item itemvalue="Python.show_web_base_info" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.page_display" />
+        <item itemvalue="Python.show_web_base_info" />
+        <item itemvalue="Python.analyze_web" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.transform_feature" />
-        <item itemvalue="Python.get_info" />
-        <item itemvalue="Python.analyze_web" />
       </list>
     </recent_temporary>
   </component>
@@ -274,13 +282,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14934114" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14787701" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50073206" side_tool="true" weight="0.28616852" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49926794" visible="true" weight="0.28616852" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49926794" visible="true" weight="0.27503973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -291,19 +298,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/urls.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7314">
-          <caret line="318" selection-start-line="318" selection-end-line="318" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/allwebs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1081">
@@ -537,9 +538,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/file.csv" />
-    <entry file="file://$PROJECT_DIR$/feature.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/feature.csv" />
     <entry file="file://$PROJECT_DIR$/different_urls">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -547,27 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/allwebs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="27" column="109" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="109" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urls.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-41393">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyze_web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -585,9 +567,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/allwebs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1303">
+          <caret line="27" column="109" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze_web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="1806" column="19" selection-start-line="1806" selection-end-line="1806" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="483">
           <caret line="24" column="118" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="118" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -595,41 +598,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature.txt">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="1806" column="19" selection-start-line="1806" selection-end-line="1806" selection-end-column="19" />
+        <state relative-caret-position="-192">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/get_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="568">
+          <caret line="103" column="43" lean-forward="true" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page_display.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+        <state relative-caret-position="299">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_info.py">
+    <entry file="file://$PROJECT_DIR$/show_web_base_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="189" column="41" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="41" />
+        <state relative-caret-position="153">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/display.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="268">
+          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
         </state>
       </provider>
     </entry>

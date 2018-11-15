@@ -1,23 +1,45 @@
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
-{% block title %}{{ url }}{% endblock %}
+{% block title %}{% if url %}{{ url }}{% else %}{% endif %}{% endblock %}
 {% block page_content %}
 <div class="page-header">
-    <h4><a href={{ url }}>{% if url %}{{ url }}{% else %}例如：https://www.baidu.com{% endif %}</a></h4>
+    <h4><a href={{ url }}>{% if url %}{{ url }}{% else %}例如：https://www.taobao.com{% endif %}</a></h4>
     {{ wtf.quick_form(form) }}
-    <h3>该网站可信度为：{{ reliability }}({% if reliability %}
-                                            {% if reliability<=0.2 %}
-                                                ★☆☆☆☆)，不建议访问！
+    {% if reliability %}
+    <h3>该网站可信度为：{{ reliability }}{% if reliability<=0.2 %}
+                                                (☆☆☆☆☆)，不建议访问！
                                             {% elif reliability<=0.4 %}
-                                                ★★☆☆☆，请谨慎访问)！
+                                                (★☆☆☆☆，请谨慎访问)！
                                             {% elif reliability<=0.6 %}
-                                                ★★★☆☆)，请谨慎访问！
-                                            {% elif reliability<=0.8 %}
-                                                ★★★★☆)，请放心访问！
+                                                (★★☆☆☆)，请谨慎访问！
+                                            {% elif reliability<=0.7 %}
+                                                (★★★☆☆)，可以访问！
+                                            {% elif reliability<=0.9 %}
+                                                (★★★★☆)，请放心访问！
                                             {% else %}
-                                                ★★★★★)，请放心访问！
+                                                (★★★★★)，请放心访问！
                                             {% endif %}
-                                        {% endif %}
-                                        </h3>
+    </h3>
+    {% else %}
+    <h3>{{ error }}</h3>
+    {% endif %}
+    <hr>
+    {% if info %}
+    <table border="1px">
+        <tr>
+            <th align="center" width = "150px">主办单位名称</th>
+            <th align="center" width = "150px">主办单位性质</th>
+            <th align="center" width = "150px">备案号</th>
+            <th align="center" width = "150px">网站名称</th>
+        </tr>
+        <tr>
+        {% if info %}
+            {% for i in info %}
+                <td>{{ i }}</td>
+            {% endfor %}
+        {% endif %}
+        </tr>
+    </table>
+    {% endif %}
 </div>
 {% endblock %}
