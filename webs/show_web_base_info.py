@@ -27,7 +27,7 @@ def get_base_info(url):
         info.append(sponsor_feature)
         info.append(sponsor_license[:-4])
         info.append(web_name)
-        print(info)
+        # print(info)
         return info
     elif soup.find_all('p', 'tc col-red fz18 YaHei pb20'):  # 如果未备案或者屏蔽
         content = soup.find_all('p', 'tc col-red fz18 YaHei pb20')[0]
@@ -37,7 +37,7 @@ def get_base_info(url):
         elif '屏蔽' in content.text:
             info = content.text
         else:
-            info = ''
+            info = '查询失败'
         return info
     else:
         info = '404'

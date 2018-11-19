@@ -24,16 +24,21 @@ def display():
     form = NameForm()
     reliability = ''
     info = ''
+    info_flag = False
     error = ''
     if form.validate_on_submit():
         url = form.url.data
-        s = Spider(url.split('//')[1])
+        s = Spider(url.split('//')[1].split(':')[0].split('/')[0])
         s.get_main_info()
         s.get_ip_location()
         s.get_qualification_info()
         s.get_site_loopholes_info()
         print(s.feature)
-        info = get_base_info(url)
+        info = get_base_info(url.split('//')[1].split(':')[0].split('/')[0])
+        if isinstance(info, list):
+            info_flag = True
+        else:
+            info_flag = False
         if len(s.feature) == 8:
             feature_list = s.feature
             data, target = load_dataset('feature_2.txt')
@@ -45,6 +50,7 @@ def display():
                            url=url,
                            reliability=reliability,
                            info=info,
+                           info_flag=info_flag,
                            error=error)
 
 

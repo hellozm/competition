@@ -13,5 +13,18 @@ def transfor():
                     file.write(ch)
 
 
+def count():
+    number_0 = 0
+    number_1 = 0
+    with open('feature_2.txt', encoding='utf-8') as f:
+        for fe in f:
+            if fe.strip()[-1] == '0':
+                number_0 += 1
+            else:
+                number_1 += 1
+    print(number_0, number_1)
+
+
 if __name__ == '__main__':
-    transfor()
+    # transfor()
+    count()

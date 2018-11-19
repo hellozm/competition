@@ -56,7 +56,7 @@ class Spider:
                         queue.visited.append(normal_url.split('.')[-2])
                         suburl.add(normal_url)
             for s in suburl:
-                if len(queue.unvisited) < 300:
+                if len(queue.unvisited) < 600:
                     queue.unvisited.append(s)
                     with open('urls.txt', 'a+', encoding='utf-8') as f:
                         # print(s)

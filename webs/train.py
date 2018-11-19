@@ -45,7 +45,21 @@ def train_2(data, target):
     print("LR测试集准确率:{}".format(model.score(x_test_std, y_test)))
 
 
+def train_3(data, target):
+    x_train, x_test, y_train, y_test = train_test_split(data, target, test_size=0.1, random_state=0)
+    print(len(x_train), len(x_test))
+    print(x_test)
+    model = LogisticRegression(penalty='l2').fit(x_train, y_train)
+    print("LR训练集准确率:{}".format(model.score(x_train, y_train)))
+    print("LR测试集准确率:{}".format(model.score(x_test, y_test)))
+    # print(model.predict(x_test))  # 测试集结果
+    # print("该网站可信度为：{}".format(model.predict_proba(np.array([[1, 2, 2, 4, 0, 0, 0, 0]]))[0][1]))  # 前者为0的可能性，后者为1的可能性
+    # print(model.predict(np.array([[1, 2, 2, 0, 0, 0, 0, 0],
+    #                              [1, 1, 2, 0, 50, 50, 50, 50]])))  # 预测2个数据
+
+
 if __name__ == '__main__':
     data, target = load_dataset('feature_2.txt')
-    train_1(data, target)
+    # train_1(data, target)
     # train_2(data, target)
+    train_3(data, target)
